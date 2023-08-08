@@ -1,1 +1,1 @@
-Домашние задания из курса <a href url= 'https://github.com/Data-Learn'>Datalearn</a>
+Р”РѕРјР°С€РЅРёРµ Р·Р°РґР°РЅРёСЏ РїРѕ РєСѓСЂСЃСѓ <a href url= 'https://github.com/Data-Learn'>Datalearn</a>
