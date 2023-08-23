@@ -34,3 +34,11 @@ select category, date_part('month', order_date) as month, sum(sales) as sales_su
 from orders o 
 group by category, date_part('month', order_date)
 order by category, month;
+
+
+--Sum Sales of returned orders
+select sum(sales)
+from orders o 
+inner join (select distinct order_id from "returns" r) dr 
+		on dr.order_id = o.order_id; 
+
