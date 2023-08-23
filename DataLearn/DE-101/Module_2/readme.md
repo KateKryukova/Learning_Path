@@ -47,7 +47,13 @@ from orders o
 group by category, date_part('month', order_date)
 order by category, month;
 ```
-
+<br> - Sum Sales of returned orders
+```sql
+select sum(sales)
+from orders o 
+inner join (select distinct order_id from "returns" r) dr 
+on dr.order_id = o.order_id;
+```
 
 
 скрипт [выложить на github](https://github.com/KateKryukova/Learning_Path/blob/main/DataLearn/DE-101/Module_2/Key_metrics_overview.sql) - **done** 
